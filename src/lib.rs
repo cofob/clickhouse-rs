@@ -403,8 +403,7 @@ impl ClientHandle {
         with_timeout(
             async {
                 self.wrap_future(move |c| {
-                    info!("[execute query] {}", query.get_sql());
-
+                    // info!("[execute query] {}", query.get_sql());
                     let transport = c.get_inner();
 
                     async move {
